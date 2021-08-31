@@ -6,10 +6,10 @@
 #### 软件架构
 开发环境：
 
--  SpringBoot 2.2.6  + JDK 1.8 + mysql 1.8
--  Mybatisplus 3.3.1	 
+-  SpringBoot 2.2.6  + JDK 1.8 + mysql 8.0
+-  mybatis-plus 3.3.1
 
-开发工具：
+ 开发工具：
      IDEA + lombok插件 + EasyCode 插件
 
 
