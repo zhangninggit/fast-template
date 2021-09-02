@@ -17,13 +17,19 @@
 
 1、下载直接使用即可，需要修改 mysql 数据源信息。
 
-2、通过 Easycode 插件，根据表逆向生成相关代码（mapper、dao等） 
+2、通过 Easycode 插件，根据表逆向生成相关代码（mapper、dao等）
+
+​	 以及mp代码生成工具类 二选一使用
+
+3、 logback日志系统
 
 #### 使用说明
 
 1、common.util.Result.java   是统一结果处理类
 
 2、common.exception.GlobalExceptionHandler  是统一异常处理类
+
+3、com.lyh.template.springboot_template.CodeAutoGenerate .java 是mp代码生成工具类
 
 
 

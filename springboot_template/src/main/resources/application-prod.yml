@@ -1,0 +1,14 @@
+# \u914D\u7F6E\u6570\u636E\u6E90
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://120.26.184.41:3306/test
+
+# \u914D\u7F6E mybatis-plus
+mybatis-plus:
+  mapper-location: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
