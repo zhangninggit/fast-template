@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://120.26.184.41:3306/test
+    url: jdbc:mysql://192.168.2.5:3306/vue-sms?useUnicode=true&characterEncoding=utf8&useSSL=false
 
 # \u914D\u7F6E mybatis-plus
 mybatis-plus:

@@ -151,7 +151,7 @@
             <logger name="com.lyh" level="INFO"/>
          -->
         <!-- 若想打印 sql 语句，可以指定包，并指定日志级别为 debug -->
-        <logger name="com.lyh.template.springboot_template" level="DEBUG"/>
+        <logger name="com.zn" level="DEBUG"/>
 
         <!-- root 用来指定最基础的日志输出级别 -->
         <root level="INFO">
@@ -165,7 +165,7 @@
 
     <!-- Step4.2 生产环境:输出到文档-->
     <springProfile name="prod">
-        <logger name="com.zn.test_easycode" level="WARN"/>
+        <logger name="com.zn" level="WARN"/>
         <root level="INFO">
             <appender-ref ref="ERROR_FILE"/>
             <appender-ref ref="WARN_FILE"/>

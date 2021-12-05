@@ -1,4 +1,4 @@
-package com.lyh.template.springboot_template;
+package com.zn;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -15,7 +15,21 @@ import org.junit.jupiter.api.Test;
  * @author zhangning
  * @date 2021/8/31 10:36
  */
-public class CodeAutoGenerate {
+public class MpCodeAutoGenerate {
+
+    // jdbcURL数据库连接
+    private static final String JDBCURL = "jdbc:mysql://192.168.2.5:3306/vue-sms?useUnicode=true&characterEncoding=utf8&useSSL=false";
+    // 配置数据库连接用户名
+    private static final String USERNAME = "root";
+    // 配置数据库连接密码
+    private static final String PASSWORD = "123456";
+    // 代码生成位置 (当前项目位置)
+    private static final String PROJECT_PATH = "D:\\develop\\fast-template\\springboot_template";
+
+    // 指定需要生成代码的表名
+    private static final String TABLE = "t_user_info";
+
+    //------------------------------------------------------------//
 
     @Test
     public void autoGenerate() {
@@ -26,10 +40,10 @@ public class CodeAutoGenerate {
         GlobalConfig gc = new GlobalConfig();
         // 填写代码生成的目录(需要修改)
         //String projectPath = "E:\\myProject\\test\\test_mybatis_plus";
-        String projectPath = "D:\\develop\\IdeaProjects\\fast-template-layui-crud\\springboot_template";
+       // String projectPath = "D:\\develop\\IdeaProjects\\fast-template-layui-crud\\springboot_template";
 
         // 拼接出代码最终输出的目录
-        gc.setOutputDir(projectPath + "/src/main/java");
+        gc.setOutputDir(PROJECT_PATH + "/src/main/java");
         // 配置开发者信息（可选）（需要修改）
         gc.setAuthor("zhangning");
         // 配置是否打开目录，false 为不打开（可选）
@@ -50,14 +64,14 @@ public class CodeAutoGenerate {
         DataSourceConfig dsc = new DataSourceConfig();
         // 配置数据库 url 地址
         // dsc.setUrl("jdbc:mysql://localhost:3306/testMyBatisPlus?useUnicode=true&characterEncoding=utf8");
-        dsc.setUrl("jdbc:mysql://192.168.2.108:3306/SMS?useUnicode=true&characterEncoding=utf8");
+        dsc.setUrl(JDBCURL);
         // dsc.setSchemaName("testMyBatisPlus"); // 可以直接在 url 中指定数据库名
         // 配置数据库驱动
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         // 配置数据库连接用户名
-        dsc.setUsername("root");
+        dsc.setUsername(USERNAME);
         // 配置数据库连接密码
-        dsc.setPassword("123456");
+        dsc.setPassword(PASSWORD);
         mpg.setDataSource(dsc);
 
         // Step:4：包配置
@@ -95,7 +109,7 @@ public class CodeAutoGenerate {
         StrategyConfig strategy = new StrategyConfig();
 
         // 指定表名（可以同时操作多个表，使用 , 隔开）（需要修改）
-        strategy.setInclude("t_student");
+        strategy.setInclude(TABLE);
 
         // 配置数据表与实体类名之间映射的策略
         strategy.setNaming(NamingStrategy.underline_to_camel);

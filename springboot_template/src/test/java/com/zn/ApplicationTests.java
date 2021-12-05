@@ -1,10 +1,10 @@
-package com.lyh.template.springboot_template;
+package com.zn;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootTemplateApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

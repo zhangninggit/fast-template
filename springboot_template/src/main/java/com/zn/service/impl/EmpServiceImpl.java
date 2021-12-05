@@ -1,8 +1,8 @@
-package com.lyh.template.springboot_template.service.impl;
+package com.zn.service.impl;
 
-import com.lyh.template.springboot_template.entity.Emp;
-import com.lyh.template.springboot_template.dao.EmpDao;
-import com.lyh.template.springboot_template.service.EmpService;
+import com.zn.entity.Emp;
+import com.zn.dao.EmpDao;
+import com.zn.service.EmpService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

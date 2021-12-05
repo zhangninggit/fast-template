@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.lyh.template.springboot_template.dao.EmpDao">
+<mapper namespace="com.zn.dao.EmpDao">
 
-    <resultMap type="com.lyh.template.springboot_template.entity.Emp" id="EmpMap">
+    <resultMap type="com.zn.entity.Emp" id="EmpMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
         <result property="salary" column="salary" jdbcType="NUMERIC"/>

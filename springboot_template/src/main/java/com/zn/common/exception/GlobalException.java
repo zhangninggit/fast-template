@@ -1,4 +1,4 @@
-package com.lyh.template.springboot_template.common.exception;
+package com.zn.common.exception;
 
 import lombok.Data;
 import org.apache.http.HttpStatus;
