@@ -1,4 +1,4 @@
-package com.lyh.template.springboot_template.common.util;
+package com.zn.common.util;
 
 import lombok.Data;
 import org.apache.http.HttpStatus;

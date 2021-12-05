@@ -1,6 +1,6 @@
-package com.lyh.template.springboot_template.service;
+package com.zn.service;
 
-import com.lyh.template.springboot_template.entity.Emp;
+import com.zn.entity.Emp;
 import java.util.List;
 
 /**

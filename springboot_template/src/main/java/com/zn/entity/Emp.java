@@ -1,4 +1,4 @@
-package com.lyh.template.springboot_template.entity;
+package com.zn.entity;
 
 import java.io.Serializable;
 

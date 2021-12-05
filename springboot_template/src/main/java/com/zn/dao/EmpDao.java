@@ -1,6 +1,6 @@
-package com.lyh.template.springboot_template.dao;
+package com.zn.dao;
 
-import com.lyh.template.springboot_template.entity.Emp;
+import com.zn.entity.Emp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;

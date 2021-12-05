@@ -1,9 +1,9 @@
-package com.lyh.template.springboot_template.controller;
+package com.zn.controller;
 
-import com.lyh.template.springboot_template.common.util.Result;
-import com.lyh.template.springboot_template.entity.Emp;
-import com.lyh.template.springboot_template.common.exception.GlobalException;
-import com.lyh.template.springboot_template.service.EmpService;
+import com.zn.common.util.Result;
+import com.zn.entity.Emp;
+import com.zn.common.exception.GlobalException;
+import com.zn.service.EmpService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

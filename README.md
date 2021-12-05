@@ -21,15 +21,15 @@
 
 ​	 以及mp代码生成工具类 二选一使用
 
-3、 logback日志系统
+#### 功能说明
 
-#### 使用说明
+1. common.util.Result.java   是统一结果处理类
 
-1、common.util.Result.java   是统一结果处理类
-
-2、common.exception.GlobalExceptionHandler  是统一异常处理类
-
-3、com.lyh.template.springboot_template.CodeAutoGenerate .java 是mp代码生成工具类
+2. common.exception.GlobalExceptionHandler  是统一异常处理类
+3. com.lyh.template.springboot_template.CodeAutoGenerate .java 是mp代码生成工具类
+4. mp分页、自动填充、完善mp代码生成 
+5. hutool工具 swagger
+6. logback日志系统
 
 
 

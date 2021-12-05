@@ -1,6 +1,6 @@
-package com.lyh.template.springboot_template.common.exception;
+package com.zn.common.exception;
 
-import com.lyh.template.springboot_template.common.util.Result;
+import com.zn.common.util.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
