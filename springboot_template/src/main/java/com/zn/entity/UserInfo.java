@@ -1,9 +1,8 @@
 package com.zn.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -16,7 +15,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author zhangning
- * @since 2021-12-05
+ * @since 2021-12-03
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -27,7 +26,7 @@ public class UserInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "id")
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty(value = "姓名")
@@ -39,23 +38,27 @@ public class UserInfo implements Serializable {
     @ApiModelProperty(value = "密码")
     private String password;
 
-    @ApiModelProperty(value = "性别        0：男   1：女    2：未知")
-    private Boolean sex;
-
     @ApiModelProperty(value = "年龄")
     private Integer age;
 
-    @ApiModelProperty(value = "是否删除 1 表示是，0 表示否")
-    private Boolean isDelete;
+    @ApiModelProperty(value = "性别 0：男 1：女  3：未知")
+    private Integer sex;
 
     @ApiModelProperty(value = "备注")
     private String remakes;
 
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "创建时间")
     private Date createTime;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     @ApiModelProperty(value = "修改时间")
     private Date updateTime;
+
+    @TableLogic(value = "0",delval = "1")
+    @TableField(fill = FieldFill.INSERT)
+    @ApiModelProperty(value = "是否逻辑删除 1已删除 0未删除")
+    private Integer isDelete;
 
 
 }
